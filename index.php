@@ -21,7 +21,7 @@
 include 'comicsPHP/htmlSaver.php';
 include 'comicsPHP/comicsParser.php';
 ?>
-<br>
+
 <img id="garfield" />
 
 <img src="<?php echo getDilbertSource() ?>">
