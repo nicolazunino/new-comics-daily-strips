@@ -29,10 +29,10 @@ function johnhartstudiosSource(comic, shortComic) {
 
 // eslint-disable-next-line no-unused-vars
 function bcStripURL() {
-  return johnhartstudiosSource('ac', 'ac');
+  return johnhartstudiosSource('bc', 'bc');
 }
 
 // eslint-disable-next-line no-unused-vars
 function wizardOfIdStripURL() {
-  return johnhartstudiosSource('wizardofid', 'wiz1');
+  return johnhartstudiosSource('wizardofid', 'wiz');
 }
