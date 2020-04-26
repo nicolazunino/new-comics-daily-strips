@@ -34,5 +34,5 @@ function bcStripURL() {
 
 // eslint-disable-next-line no-unused-vars
 function wizardOfIdStripURL() {
-  return johnhartstudiosSource('wizardofid', 'wiz');
+  return johnhartstudiosSource('wizardofid', 'wiz1');
 }
