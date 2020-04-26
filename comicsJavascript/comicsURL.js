@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function garfieldStripURL() {
   const todaysDate = new Date();
   const todaysYear = todaysDate.getYear() + 1900;
@@ -6,7 +7,7 @@ function garfieldStripURL() {
         + (`0${todaysDate.getDate()}`).slice(-2);
 
   return `http://strips.garfield.com/iimages1200/${todaysYear}/ga${dateForURL}.gif`;
-};
+}
 
 function johnhartstudiosSource(comic, shortComic) {
   const monthNames = ['january', 'february', 'march', 'april', 'may', 'june',
@@ -14,7 +15,7 @@ function johnhartstudiosSource(comic, shortComic) {
 
   const todaysDate = new Date();
   const todaysYear = todaysDate.getYear() + 1900;
-  const todaysMonth = monthNames[todaysDate.getMonth()]
+  const todaysMonth = monthNames[todaysDate.getMonth()];
   const dateForURL = (`0${todaysDate.getMonth() + 1}`).slice(-2)
         + (`0${todaysDate.getDate()}`).slice(-2)
         + (todaysYear - 2000);
@@ -22,10 +23,12 @@ function johnhartstudiosSource(comic, shortComic) {
   return `https://johnhartstudios.com/${comic}strips/${todaysYear}/${todaysMonth}/${shortComic}${dateForURL}dc.jpg`;
 }
 
+// eslint-disable-next-line no-unused-vars
 function bcStripURL() {
   return johnhartstudiosSource('bc', 'bc');
-};
+}
 
+// eslint-disable-next-line no-unused-vars
 function wizardOfIdStripURL() {
   return johnhartstudiosSource('wizardofid', 'wiz');
-};
+}
