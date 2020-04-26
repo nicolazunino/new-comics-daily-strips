@@ -7,7 +7,7 @@ pipelines:
             - pipe: atlassian/ftp-deploy:0.3.2
               variables:
                 USER: 'nicolazunino'
-                PASSWORD: 'biccigetga26'
+                PASSWORD: ''
                 SERVER: 'ftp.nicolazunino.altervista.org'
                 REMOTE_PATH: '.'
                 DEBUG: 'true'
