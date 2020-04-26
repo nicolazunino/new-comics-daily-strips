@@ -11,4 +11,4 @@ pipelines:
       - step:
           script:
             - echo "only on master"
-            - git ftp push -u "nicolazunino" -p "biccigetga26" ftp://ftp.nicolazunino.altervista.org --all
+            - git ftp push -u "nicolazunino" -p "" ftp://ftp.nicolazunino.altervista.org --all
