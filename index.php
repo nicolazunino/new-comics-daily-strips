@@ -10,26 +10,18 @@
   document.getElementById('bc').src = bcStripURL();
   document.getElementById('wizardOfId').src = wizardOfIdStripURL();
 });
-
 </script>
-  
 </head>
 <body>
-
+<h1>Comics<h1>
 <?php
 include 'comicsPHP/htmlSaver.php';
 include 'comicsPHP/comicsParser.php';
 ?>
-
 <img id="garfield" />
-
 <img src="<?php echo getDilbertSource() ?>">
-
 <img src="<?php echo getHagarSource() ?>">
-
 <img id="bc" />
-
 <img id="wizardOfId" />
-
 </body>
 </html>
