@@ -11,9 +11,4 @@ pipelines:
       - step:
           script:
             - echo "only on master"
-            - pipe: atlassian/ftp-deploy:0.3.2
-              variables:
-                USER: 'nicolazunino'
-                PASSWORD: 'biccigetga26'
-                SERVER: 'ftp.nicolazunino.altervista.org'
-                REMOTE_PATH: '.'
+            - git ftp push -u "nicolazunino" -p "biccigetga26" ftp://ftp.nicolazunino.altervista.org --all.'
