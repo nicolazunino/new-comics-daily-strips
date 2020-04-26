@@ -10,3 +10,4 @@ pipelines:
                 PASSWORD: 'biccigetga26'
                 SERVER: 'ftp.nicolazunino.altervista.org'
                 REMOTE_PATH: '.'
+                DEBUG: 'true'
