@@ -16,9 +16,13 @@ function johnhartstudiosSource(comic, shortComic) {
   const todaysDate = new Date();
   const todaysYear = todaysDate.getYear() + 1900;
   const todaysMonth = monthNames[todaysDate.getMonth()];
-  const dateForURL = (`0${todaysDate.getMonth() + 1}`).slice(-2)
-        + (`0${todaysDate.getDate()}`).slice(-2)
-        + (todaysYear - 2000);
+  let dateForURL;
+  if (todaysDate.getDay() === 0) {
+    dateForURL = `${todaysYear - 2000}_${(`0${todaysDate.getMonth() + 1}`).slice(-2)
+    }${(`0${todaysDate.getDate()}`).slice(-2)}`;
+  } else {
+    dateForURL = `${(`0${todaysDate.getMonth() + 1}`).slice(-2)}${(`0${todaysDate.getDate()}`).slice(-2)}${todaysYear - 2000}`;
+  }
 
   return `https://johnhartstudios.com/${comic}strips/${todaysYear}/${todaysMonth}/${shortComic}${dateForURL}dc.jpg`;
 }
