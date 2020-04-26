@@ -29,7 +29,7 @@ function johnhartstudiosSource(comic, shortComic) {
 
 // eslint-disable-next-line no-unused-vars
 function bcStripURL() {
-  return johnhartstudiosSource('ac', 'bc');
+  return johnhartstudiosSource('ac', 'ac');
 }
 
 // eslint-disable-next-line no-unused-vars
