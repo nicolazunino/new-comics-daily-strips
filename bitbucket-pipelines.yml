@@ -9,11 +9,11 @@ pipelines:
   branches:
     master:
       - step:
-        script:
-          - echo "only on master"
-          - pipe: atlassian/ftp-deploy:0.3.2
-            variables:
-              USER: 'nicolazunino'
-              PASSWORD: 'biccigetga26'
-              SERVER: 'ftp.nicolazunino.altervista.org'
-              REMOTE_PATH: '.'
+          script:
+            - echo "only on master"
+            - pipe: atlassian/ftp-deploy:0.3.2
+              variables:
+                USER: 'nicolazunino'
+                PASSWORD: 'biccigetga26'
+                SERVER: 'ftp.nicolazunino.altervista.org'
+                REMOTE_PATH: '.'
