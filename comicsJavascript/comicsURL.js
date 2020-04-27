@@ -36,3 +36,14 @@ function bcStripURL() {
 function wizardOfIdStripURL() {
   return johnhartstudiosSource('wizardofid', 'wiz');
 }
+
+// eslint-disable-next-line no-unused-vars
+function muttsStripURL() {
+  const todaysDate = new Date();
+  const todaysYear = todaysDate.getYear() + 1900;
+  const todaysMonth = (`0${todaysDate.getMonth() + 1}`).slice(-2)
+  const dateForURL = todaysMonth + (`0${todaysDate.getDate()}`).slice(-2) + (todaysYear - 2000);
+
+  return `https://mutts.com/wp-content/uploads/${todaysYear}/${todaysMonth}/${dateForURL}.gif`;
+}
+
